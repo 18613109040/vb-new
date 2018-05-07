@@ -39,8 +39,10 @@ module.exports = {
             test: /\.html$/,
             use: 'html-loader?attrs=img:src img:data-src'
         }, {
+            
             test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
             use: ['file-loader?limit=1000&name=images/[md5:hash:base64:10].[ext]']
+            
         }]
     },
     plugins: [

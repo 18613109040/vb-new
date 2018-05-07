@@ -21,7 +21,7 @@ const options = {
         app.use(errorOverlayMiddleware())
         if (process.env.NODE_ENV != "production") {
             app.use('/api/*', proxy({
-                target: 'http://testxws.sibumbg.com',
+                target: 'http://napi.sibu.net.cn',
                 secure: false,
                 changeOrigin: true,
                 pathRewrite: {'^/api': '/'}
@@ -35,7 +35,6 @@ const options = {
         }
     }
 };
-
 const compiler = webpack(config);
  //WebpackDevServer.addDevServerEntrypoints(config, options);
 const server = new WebpackDevServer(compiler, options);
