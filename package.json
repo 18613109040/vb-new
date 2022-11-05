@@ -16,7 +16,7 @@
     "babel-runtime": "^6.11.6",
     "rc-form": "^0.17.2",
     "reactjs-iscroll": "^0.3.2",
-    "sass-loader": "^6.0.6"
+    "sass-loader": "^9.0.0"
   },
   "theme": {
     "@brand-primary": "#1DA57A"
